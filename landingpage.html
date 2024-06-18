@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="landingpage.css" />
+    <title>landingpage</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+      
+        <div class="nav__logo"><a href="#">Web<span>Design </span></a></div> 
+         <div class="nav_logo">
+          
+          
+         </a>
+        <ul class="nav__links">
+           <li class="link">Home</li>
+           
+          <li class="link">About</li>
+          <li class="link">Service</li>
+          <li class="link">Blog</li>
+          <li class="link">Contact</li>
+        </ul>
+        <div class="toggle__btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+      <div class="hero">
+        <h2>Like nature</h2>
+        <h1>Be Creative!!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+         Nisi, delectus obcaecati nesciunt, optio, non placeat vitaea<br>
+         tempore nihil voluptates doloribus sint fugiat architecto <br>
+         maiores praesentium quam ab corporis odit. Lorem ipsum <br>dolor sit amet consectetur adipisicing elit. Dignissimos nemo.</p>
+        <button>Explore More...</button>
+      </div>
+    </header>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle__btn");
+      const toggleBtnIcon = document.querySelector(".toggle__btn i");
+      const menu = document.querySelector(".nav__links");
+
+      toggleBtn.onclick = function () {
+        menu.classList.toggle("open");
+        const isOpen = menu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line";
+      };
+    </script>
+  </body>
+</html>
